@@ -1,0 +1,7 @@
+stage("Build Info") {
+    node {
+    
+        def commit = checkout scm
+        echo "Latest commit id: ${commit.GET_COMMIT}
+    }
+}
